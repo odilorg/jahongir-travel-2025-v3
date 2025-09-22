@@ -1,0 +1,28 @@
+# Jahongir Travel - Robots.txt
+# Uzbekistan Travel and Tours
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /phpmailer/
+Disallow: /*.log$
+Disallow: /*.zip$
+Disallow: /*.docx$
+Disallow: /*.pdf$
+
+# Allow important directories
+Allow: /images/
+Allow: /assets/
+Allow: /uzbekistan-tours/
+Allow: /tours-from-samarkand/
+Allow: /tours-from-bukhara/
+Allow: /tours-from-khiva/
+Allow: /tajikistan-tours/
+
+# Sitemap location
+Sitemap: https://jahongir-travel.uz/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

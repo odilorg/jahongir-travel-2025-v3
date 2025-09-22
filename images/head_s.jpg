@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^.*-goods-(\d+)/$ productl/index\.php?id=$1&%{QUERY_STRING} [L]
+RewriteRule ^(.*)-j\d+/$ productl/index\.php?cat=$1&%{QUERY_STRING} [L]
+RewriteRule ^.*(web[a-z]+gmap\.xml)$  gmap/$1 [L]
+RewriteRule ^.*(sitemap\.xml)$  gmap/$1 [L]
+
+RewriteBase /
+</IfModule>

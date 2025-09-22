@@ -1,0 +1,12 @@
+# Minimal .htaccess - Emergency Fallback
+# If the main .htaccess causes errors, rename this to .htaccess
+
+# Basic MIME types
+AddType image/webp .webp
+
+# Block access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
