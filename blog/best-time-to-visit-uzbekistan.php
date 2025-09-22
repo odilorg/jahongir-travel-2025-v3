@@ -1,6 +1,6 @@
 <?php 
-$title = "Best Time to Visit Uzbekistan: Complete Seasonal Guide | Jahongir Travel";
-$meta_description = "Discover the best time to visit Uzbekistan with our complete seasonal guide. Learn about weather, festivals, tourist crowds, and optimal months for Samarkand, Bukhara, and Khiva.";
+$title = "Best Time to Visit Uzbekistan: Weather by Season | Jahongir Travel";
+$meta_description = "Plan your trip with our season-by-season guide to Uzbekistan weather, festivals and crowds—find your perfect month to visit.";
 $meta_keywords = "best time visit Uzbekistan, Uzbekistan weather, Uzbekistan seasons, Samarkand weather, Bukhara weather, Uzbekistan festivals, Uzbekistan travel season";
 $canonical_url = "https://jahongir-travel.uz/blog/best-time-to-visit-uzbekistan";
 $og_type = "article";

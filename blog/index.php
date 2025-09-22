@@ -1,6 +1,6 @@
 <?php 
-$title = "Uzbekistan Travel Blog | Travel Tips, Guides & Local Insights | Jahongir Travel";
-$meta_description = "Discover Uzbekistan through our travel blog! Expert tips on best time to visit, visa requirements, local food, hidden gems, and photography guides. Your complete Uzbekistan travel resource.";
+$title = "Uzbekistan Travel Blog: Tips, Guides and Local Advice | Jahongir Travel";
+$meta_description = "Expert travel tips from locals—best time to visit, visas, packing, food and hidden gems across Uzbekistan.";
 $meta_keywords = "Uzbekistan travel blog, Uzbekistan travel tips, Samarkand travel guide, Bukhara travel guide, Uzbekistan visa, Uzbekistan food, Uzbekistan photography";
 $canonical_url = "https://jahongir-travel.uz/blog";
 $og_type = "website";

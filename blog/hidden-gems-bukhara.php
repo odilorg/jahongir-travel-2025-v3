@@ -1,6 +1,6 @@
 <?php 
-$title = "Hidden Gems in Bukhara - Secret Places Only Locals Know | Jahongir Travel";
-$meta_description = "Discover hidden gems in Bukhara that most tourists miss. From secret courtyards to local workshops, explore the authentic side of this ancient Silk Road city.";
+$title = "Hidden Gems in Bukhara: Secret Spots Only Locals Know";
+$meta_description = "Explore authentic Bukhara with quiet courtyards, artisan workshops and lesser‑known sights beyond the main trail.";
 $meta_keywords = "Bukhara hidden gems, secret places Bukhara, off the beaten path Bukhara, local Bukhara, authentic Bukhara, Bukhara secrets";
 $canonical_url = "https://jahongir-travel.uz/blog/hidden-gems-bukhara";
 $og_type = "article";

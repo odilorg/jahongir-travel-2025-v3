@@ -1,6 +1,6 @@
 <?php 
-$title = "What to Pack for Uzbekistan Travel: Essential Packing List | Jahongir Travel";
-$meta_description = "Complete packing list for Uzbekistan travel! Essential items for Samarkand, Bukhara, Khiva. Clothing, electronics, documents, and travel gear for every season.";
+$title = "What to Pack for Uzbekistan: Essential Packing List (2025)";
+$meta_description = "Complete Uzbekistan packing list with clothing tips, cultural dress guidance and seasonal essentials for Samarkand, Bukhara and Khiva.";
 $meta_keywords = "Uzbekistan packing list, what to pack Uzbekistan, Uzbekistan travel essentials, Samarkand packing, Bukhara packing, Uzbekistan travel gear";
 $canonical_url = "https://jahongir-travel.uz/blog/what-to-pack-uzbekistan-travel";
 $og_type = "article";

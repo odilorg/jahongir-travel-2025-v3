@@ -25,6 +25,10 @@
     <meta name="twitter:title" content="<?php echo isset($title) ? $title : 'Uzbekistan Travel Blog - Expert Travel Tips & Local Insights'; ?>">
     <meta name="twitter:description" content="<?php echo isset($meta_description) ? $meta_description : 'Expert travel tips, local insights, and everything you need to know about visiting Uzbekistan. From locals born and raised in Samarkand.'; ?>">
     <meta name="twitter:image" content="<?php echo isset($og_image) ? $og_image : 'https://jahongir-travel.uz/images/logo_brown.png'; ?>">
+    <meta name="twitter:image:alt" content="<?php 
+        if (isset($title)) { echo htmlspecialchars($title, ENT_QUOTES); }
+        else { echo 'Jahongir Travel blog image'; }
+    ?>">
 	
     <!-- Canonical URL -->
     <link rel="canonical" href="<?php echo isset($canonical_url) ? $canonical_url : ('https://jahongir-travel.uz' . $_SERVER['REQUEST_URI']); ?>">
@@ -402,6 +406,21 @@
 		});
 	});
 	</script>
+
+    <?php if (isset($og_type) && $og_type === 'article'): ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "<?php echo addslashes(isset($title) ? $title : 'Uzbekistan Travel Blog - Expert Travel Tips & Local Insights'); ?>",
+      "description": "<?php echo addslashes(isset($meta_description) ? $meta_description : 'Expert travel tips and local insights about Uzbekistan travel.'); ?>",
+      "image": ["<?php echo isset($og_image) ? $og_image : 'https://jahongir-travel.uz/images/logo_brown.png'; ?>"],
+      "mainEntityOfPage": "<?php echo isset($canonical_url) ? $canonical_url : ('https://jahongir-travel.uz' . $_SERVER['REQUEST_URI']); ?>",
+      "author": {"@type": "Organization", "name": "Jahongir Travel"},
+      "publisher": {"@type": "Organization", "name": "Jahongir Travel", "logo": {"@type": "ImageObject", "url": "https://jahongir-travel.uz/images/logo_brown.png"}}
+    }
+    </script>
+    <?php endif; ?>
 </head>
 <body class="home page-template-default page page-id-2 woocommerce-js">
 	<!-- Preloader -->

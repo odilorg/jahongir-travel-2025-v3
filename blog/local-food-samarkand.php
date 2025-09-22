@@ -1,6 +1,6 @@
 <?php 
-$title = "Local Food You Must Try in Samarkand - Authentic Uzbek Cuisine | Jahongir Travel";
-$meta_description = "Discover the best local food in Samarkand. From traditional plov to fresh bread and sweet treats, explore authentic Uzbek cuisine with our local food guide.";
+$title = "Local Food in Samarkand: 12 Must‑Try Uzbek Dishes";
+$meta_description = "Discover 12 must‑try dishes in Samarkand—where to eat authentic plov, samsa and sweets like a local.";
 $meta_keywords = "Samarkand food, Uzbek cuisine, traditional Uzbek food, Samarkand restaurants, Uzbek plov, Samarkand bread, local food Samarkand";
 $canonical_url = "https://jahongir-travel.uz/blog/local-food-samarkand";
 $og_type = "article";

@@ -1,6 +1,6 @@
 <?php 
-$title = "Uzbekistan Visa Requirements 2025 - Complete Guide | Jahongir Travel";
-$meta_description = "Complete guide to Uzbekistan visa requirements for 2025. Learn about visa-free countries, eVisa application process, and travel documents needed for your Uzbekistan trip.";
+$title = "Uzbekistan Visa Requirements (2025): e‑Visa, Visa‑Free Countries";
+$meta_description = "2025 guide to Uzbekistan visas: visa‑free list, e‑Visa steps, documents and processing times for travelers.";
 $meta_keywords = "Uzbekistan visa requirements, Uzbekistan eVisa, visa-free Uzbekistan, Uzbekistan travel documents, Uzbekistan visa application";
 $canonical_url = "https://jahongir-travel.uz/blog/uzbekistan-visa-requirements";
 $og_type = "article";
