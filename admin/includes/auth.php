@@ -50,7 +50,8 @@ function isLoggedIn() {
  */
 function requireAuth() {
     if (!isLoggedIn()) {
-        header('Location: /admin/index.php?redirect=' . urlencode($_SERVER['REQUEST_URI']));
+        $redirect = isset($_SERVER['REQUEST_URI']) ? urlencode($_SERVER['REQUEST_URI']) : '';
+        header('Location: /admin/index.php?redirect=' . $redirect);
         exit;
     }
 }
