@@ -74,6 +74,12 @@ if (isPost()) {
 
 // Function to create new blog file
 function createBlogFile($filepath, $data) {
+    // Ensure directory exists
+    $directory = dirname($filepath);
+    if (!is_dir($directory)) {
+        mkdir($directory, 0755, true);
+    }
+
     // Get template
     $template = getBlogTemplate($data);
 
