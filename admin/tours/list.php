@@ -178,7 +178,14 @@ renderAdminHeader('Tours', 'tours');
                             <i class="fas fa-edit"></i>
                         </a>
                         <a
-                            href="<?php echo str_replace(ROOT_DIR, SITE_URL, str_replace('\\', '/', $tour['path'])); ?>"
+                            href="<?php
+                                // Get relative path from document root
+                                $relativePath = str_replace(ROOT_DIR, '', str_replace('\\', '/', $tour['path']));
+                                // Construct URL based on current request
+                                $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+                                $baseUrl .= str_replace('/admin/tours/list.php', '', $_SERVER['PHP_SELF']);
+                                echo $baseUrl . $relativePath;
+                            ?>"
                             target="_blank"
                             class="text-green-600 hover:text-green-700"
                             title="Preview"

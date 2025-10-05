@@ -251,7 +251,14 @@ renderAdminHeader('Edit Tour: ' . truncate($tourData['title'], 50), 'tours');
                 </a>
 
                 <a
-                    href="<?php echo str_replace(ROOT_DIR, SITE_URL, str_replace('\\', '/', $filepath)); ?>"
+                    href="<?php
+                        // Get relative path from document root
+                        $relativePath = str_replace(ROOT_DIR, '', str_replace('\\', '/', $filepath));
+                        // Construct URL based on current request
+                        $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+                        $baseUrl .= str_replace('/admin/tours/edit.php', '', $_SERVER['PHP_SELF']);
+                        echo $baseUrl . $relativePath;
+                    ?>"
                     target="_blank"
                     class="btn-secondary w-full block text-center"
                 >

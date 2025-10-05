@@ -192,7 +192,12 @@ renderAdminHeader('Edit Blog Post: ' . truncate($postData['title'], 50), 'blog')
                 </a>
 
                 <a
-                    href="<?php echo SITE_URL . '/blog/' . $postData['filename']; ?>"
+                    href="<?php
+                        // Construct URL based on current request
+                        $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+                        $baseUrl .= str_replace('/admin/blog/edit.php', '', $_SERVER['PHP_SELF']);
+                        echo $baseUrl . '/blog/' . $postData['filename'];
+                    ?>"
                     target="_blank"
                     class="btn-secondary w-full block text-center"
                 >

@@ -21,8 +21,17 @@ define('KHIVA_TOURS_DIR', ROOT_DIR . '/tours-from-khiva');
 define('BLOG_DIR', ROOT_DIR . '/blog');
 define('IMAGES_DIR', ROOT_DIR . '/images');
 
-// Site settings
-define('SITE_URL', 'https://jahongir-travel.uz');
+// Site settings - Auto-detect localhost or use production URL
+if (isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false || strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false)) {
+    // Localhost - construct base URL
+    $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+    $host = $_SERVER['HTTP_HOST'];
+    $scriptPath = dirname(dirname($_SERVER['SCRIPT_NAME'])); // Remove /admin from path
+    define('SITE_URL', $protocol . '://' . $host . $scriptPath);
+} else {
+    // Production
+    define('SITE_URL', 'https://jahongir-travel.uz');
+}
 define('SITE_NAME', 'Jahongir Travel');
 
 // File patterns

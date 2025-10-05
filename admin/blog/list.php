@@ -102,7 +102,12 @@ renderAdminHeader('Blog Posts', 'blog');
                     <i class="fas fa-edit mr-1"></i> Edit
                 </a>
                 <a
-                    href="<?php echo SITE_URL . '/blog/' . $post['filename']; ?>"
+                    href="<?php
+                        // Construct URL based on current request
+                        $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+                        $baseUrl .= str_replace('/admin/blog/list.php', '', $_SERVER['PHP_SELF']);
+                        echo $baseUrl . '/blog/' . $post['filename'];
+                    ?>"
                     target="_blank"
                     class="text-blue-600 hover:text-blue-700 font-semibold"
                 >
